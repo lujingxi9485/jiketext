@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>  
+    var arr   = ["a","x","b","d","m","a","k","m","p","j","a"];
+    var count = {};//次数
+    var pos   = {};//位置
+    //遍历arr，统计每个字母出现次数且记录位置
+    arr.forEach(function(v, i){//函数（值，索引）
+        if(count[v]){
+            count[v] ++;
+            pos[v] += ","+i; 
+        } else {
+            count[v] = 1;
+            pos[v]   = ""+i;
+        }
+    });
+    console.log(count);
+    console.log(pos);
+    
+    //获取出现最多的字母
+    var max = 0;
+    var letter;
+    for(i in count){
+        if(count[i] > max ){
+            max    = count[i];
+            letter = i; 
+        }
+    }
+    console.log("最多的是：" + letter);//最多的是：a
+    console.log("位置分布：" + pos[letter])//位置分布：0,5,10
+
+  
+</script> 
+</body>
+</html>

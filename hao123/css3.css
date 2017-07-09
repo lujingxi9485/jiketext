@@ -1,0 +1,31 @@
+nav{
+	border-top: 2px solid #c527ec;
+}
+nav ul li:first-child{
+	background: #c527ec;
+}
+.right-side .clo-font{
+	color: #c527ec;
+}
+.clo-font{
+	color: #c527ec;
+}
+.right-side{
+	border: 1px solid #c527ec;
+}
+.rs2{
+	border: 1px solid #c527ec;
+}
+.rs2-nav{
+	border: 1px solid #c527ec;
+	border-bottom: 0; 
+}
+.left-side{
+	border: 1px solid #c527ec; 
+}
+nav ul li:hover{
+	background: #c527ec;
+}
+.rs2-nav .rs2-nav1 li:hover a{
+	color: red;
+}

@@ -1,0 +1,21 @@
+body {	
+	font-family: Arial; 	
+    font-size: 14px; 	
+    color: #555; 
+	margin: 60px auto; 
+}
+table{		
+	border-spacing: 0; /*单元格边框间距为0*/	
+        }
+h2{
+	text-align: center;
+}
+th{
+	width: 80px;
+	height: 30px;
+}
+td{
+	width: 80px;
+	height: 30px;
+	text-align: center;
+}

@@ -1,0 +1,35 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{font: 13px arial;}
+
+header nav{
+	padding-top:10px; 
+	width: 500px;
+	float: right;
+	background-color: red;
+}
+
+header nav a{
+	padding-right: 15px;
+}
+.content{
+	text-align: center;
+	padding-top: 125px;
+}
+.content img{
+	padding-bottom: 25px; 
+}
+.content input{
+	width: 500px;
+	height: 34px;
+}
+.content button{
+	width: 100px;
+	height: 40px;
+}
+footer{
+	text-align: center;
+	padding-top:425px;
+}

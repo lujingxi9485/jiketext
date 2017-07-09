@@ -1,0 +1,59 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.all{
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	margin-left: -150px;
+	margin-top: -150px;
+}
+
+.blue{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	margin: 0 auto;
+	box-shadow: #5d5d5d 0px 0px 50px;
+}
+
+.red{
+	width: 100px;
+	height: 100px;
+	float: left;
+	background-color: red;
+	box-shadow: #5d5d5d 0px 0px 50px;
+}
+
+.image{
+	width: 100px;
+	height: 100px;
+	float: left;
+    background-image: url(./maomi.jpg);
+    box-shadow: #5d5d5d 0px 0px 50px;
+}
+
+.orange{
+	width: 100px;
+	height: 100px;
+	float: left;
+	background-color: orange;
+	box-shadow: #5d5d5d 0px 0px 50px;
+}
+
+.green{
+	position: absolute;
+	top:200px;
+	left: 100px;
+	width:100px;
+    height:100px;
+    background-color:green;
+    box-shadow: #5d5d5d 0px 0px 50px;
+}
+
+
+

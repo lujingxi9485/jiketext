@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hao123</title>
+	<link rel="stylesheet" type="text/css" href="hao123.css">
+	<link id="skin" rel="stylesheet" type="text/css" href="css.css">
+    <script language="javascript">
+        function SetCookie(name, value) {
+        var argv = SetCookie.arguments;
+        var argc = SetCookie.arguments.length;
+        var expires = (2 < argc) ? argv[2] : null;
+        var path = (3 < argc) ? argv[3] : null;
+        var domain = (4 < argc) ? argv[4] : null;
+        var secure = (5 < argc) ? argv[5] : false;
+        document.cookie = name + "=" + escape(value) + ((expires == null) ? "" : ("; expires=" + expires.toGMTString())) + ((path == null) ? "" : ("; path=" + path)) + ((domain == null) ? "" : ("; domain=" + domain)) + ((secure == true) ? "; secure" : "");
+         }
+         function GetCookie(Name) {
+        var search = Name + "=";
+        var returnvalue = "";
+        if (document.cookie.length > 0) {
+            offset = document.cookie.indexOf(search);
+            if (offset != -1) {
+                offset += search.length;
+                end = document.cookie.indexOf(";", offset);
+                if (end == -1)
+                    end = document.cookie.length;
+                returnvalue = unescape(document.cookie.substring(offset, end));
+            }
+        }
+        return returnvalue;
+         }
+         var thisskin;
+         thisskin = GetCookie("nowskin");
+         if (thisskin != "")
+             skin.href = thisskin;
+         else
+             skin.href = "css.css";
+         function changecss(url) {
+        if (url != "") {
+            skin.href = url;
+            var expdate = new Date();
+            expdate.setTime(expdate.getTime() + (24 * 60 * 60 * 1000 * 30));
+            //expdate=null;
+            //以下设置COOKIES时间为1年,自己随便设置该时间..
+            SetCookie("nowskin", url, expdate, "/", null, false);
+        }
+         }
+    </script>
+    
+</head>
+<body>
+<div class="all">
+    <!-- 顶部工具栏 -->
+    <div class="top">
+        <div class="top-tool">
+            <a href="https://www.hao123.com">
+                <img class="img-hook" src="https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/img/richanglogo168_24.png" width="168" height="60" alt="上网从hao123开始">
+            </a>
+            
+            <div class="tool">               
+                <a href="">〈 换肤</a>
+                <a href="">网盘</a>
+                <a href="">邮箱</a>
+                <a href="">手机版</a>
+            </div>
+            <div class="changecol">
+            	<ul>
+            	    <li onclick="changecss('css.css')" class="tool-clo" style="background: #099e6a"></li>
+            		<li onclick="changecss('css1.css')" class="tool-clo" style="background: orange"></li>           		
+            		<li onclick="changecss('css2.css')" class="tool-clo" style="background: #279aec"></li>
+            		<li onclick="changecss('css3.css')" class="tool-clo" style="background: #c527ec"></li>
+            	</ul>
+            </div>
+        </div>
+    </div>
+    <!-- 百度搜索栏 -->
+    <div class="baidu-seach">
+        <div class="seach">
+            <div class="seach0">
+                <a href="http://www.baidu.com">
+                </a>
+                <form>
+                <input type="text" name="">
+                <button>百度一下</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <!-- nav -->
+    <nav>
+        <ul>
+            <li><a href="" >首页</a></li>
+            <li><a href="">电视剧</a></li>
+            <li><a href="">最新电影</a></li>
+            <li><a href="">新闻头条</a></li>
+            <li><a href="">八卦娱乐</a></li>
+            <li><a href="">军事热点</a></li>
+            <li><a href="">热门游戏</a></li>
+            <li><a href="">小游戏</a></li>
+            <li><a href="">今日特价</a></li>
+            <li><a href="">特价旅游</a></li>
+        </ul>
+    </nav>
+<div class="con">
+    <div class="right-side">
+        <ul>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span class="clo-font">优酷网</span></a></li>
+            <li><a href=""><span class="clo-font">优酷网</span></a></li>
+            <li><a href=""><span class="clo-font">优酷网</span></a></li>
+            <li><a href=""><span class="clo-font">优酷网</span></a></li>
+            <li><a href=""><span class="clo-font">优酷网</span></a></li>
+            <li><a href=""><span class="clo-font">优酷网</span></a></li>
+            <li><a href=""><span class="clo-font">优酷网</span></a></li>
+            <li><a href=""><span class="clo-font">优酷网</span></a></li>
+        </ul>
+    </div>
+    <div class="left-side">
+    <ul>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+    </div>
+    <div class="rs2-nav">
+        <ul class="rs2-nav1">
+            <li><a href="" class="clo-font">电视剧</a></li>
+            <li><a href="" class="clo-font">电影</a></li>
+            <li><a href="" class="clo-font">新闻</a></li>
+            <li><a href="" class="clo-font">娱乐</a></li>
+            <li><a href="" class="clo-font">军事</a></li>
+            <li><a href="" class="clo-font">小游戏</a></li>
+            <li><a href="" class="clo-font">特价</a></li>
+            <li><a href="" class="clo-font">购物</a></li>
+            <li><a href="" class="clo-font">综艺</a></li>
+            <li><a href="" class="clo-font">软件</a></li>
+            <li><a href="" class="clo-font">学习</a></li>
+            <li><a href="" class="clo-font">理财</a></li>
+        </ul>
+    </div>
+    <div class="rs2">
+        <ul>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span>优酷网</span></a></li>
+            <li><a href=""><span class="clo-font">优酷网</span></a></li>
+            <li><a href=""><span class="clo-font">优酷网</span></a></li>
+            <li><a href=""><span class="clo-font">优酷网</span></a></li>
+            <li><a href=""><span class="clo-font">优酷网</span></a></li>
+            <li><a href=""><span class="clo-font">优酷网</span></a></li>
+            <li><a href=""><span class="clo-font">优酷网</span></a></li>
+            <li><a href=""><span class="clo-font">优酷网</span></a></li>
+            <li><a href=""><span class="clo-font">优酷网</span></a></li>
+        </ul>
+    </div>
+    
+</div>
+
+
+</div>
+
+	
+</body>
+</html>

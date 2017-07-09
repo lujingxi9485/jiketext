@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+	function function_name() {
+		// body...
+	var x= document.getElementById("input1").value;
+	if (0<=x&&x<10) {
+		document.write("10等生")       //if的实现方式
+	}else if (10<=x&&x<20) {
+		document.write("9等生")
+	}else if (20<=x&&x<30) {
+		document.write("8等生")
+	}else if (30<=x&&x<40) {
+		document.write("7等生")
+	}else if (40<=x&&x<50) {
+		document.write("6等生")
+	}else if (50<=x&&x<60) {
+		document.write("5等生")
+	}else if (60<=x&&x<70) {
+		document.write("4等生")
+	}else if (70<=x&&x<80) {
+		document.write("3等生")
+	}else if (80<=x&&x<90) {
+		document.write("2等生")
+	}else if (90<=x&&x<=100) {
+		document.write("1等生")
+	}else{
+		document.write("请输入0到100的数字分数")
+	}
+
+	// switch(x){
+	// 	case "0<=x&&x<=10":
+	// 	document.write("10等生");   //switch的实现方法
+	// 	break;
+	// 	case "10<x&&x<=20":               //老师帮我看看为什么我的switch的方法实现不了
+	// 	document.write("9等生");
+	// 	break;
+	// 	case "20<x&&x<=30":
+	// 	document.write("8等生");
+	// 	break;
+	// 	case "30<x&&x<=40":
+	// 	document.write("7等生");
+	// 	break;
+	// 	case "40<x&&x<=50":
+	// 	document.write("6等生");
+	// 	break;
+	// 	case "50<x&&x<=60":
+	// 	document.write("5等生");
+	// 	break;
+	// 	case "60<x&&x<=70":
+	// 	document.write("4等生");
+	// 	break;
+	// 	case "70<x&&x<=80":
+	// 	document.write("3等生");
+	// 	break;
+	// 	case "80<x&&x<=90":
+	// 	document.write("2等生");
+	// 	break;
+	// 	case "90<x&&x<=100":
+	// 	document.write("1等生");
+	// 	break;
+	// 	default:
+	// 	document.write("请输入0到100的数字分数")
+	// 	break;
+	// }							
+	}
+			
+
+	</script>
+</head>
+<body>
+    请输入分数：
+    <input type="text" value="" id="input1">
+    <button onclick="function_name()">点击</button>（请输入0-100的数字）
+</body>
+</html>

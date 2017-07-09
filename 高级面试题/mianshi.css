@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "Microsoft YaHei",-apple-system-font,"Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+	background: #ecebf0;
+}
+h1{
+    text-align: center;
+    line-height: 100px;
+}
+.top{
+	height: 100px;
+	background: #09495a;
+	color: #fff;
+}
+.mid{
+	width: 900px;
+	background-color: #fff;
+	margin: 10px auto;
+	border-radius: 5px;
+    padding: 20px;
+    -webkit-transition: box-shadow .2s linear;
+    transition: box-shadow .2s linear;
+}
+h3{
+	margin-bottom: 8px;
+}
+.mid:hover{
+	box-shadow: 0 4px 8px rgba(0,0,0,.4);
+}

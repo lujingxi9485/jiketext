@@ -1,0 +1,119 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+    font-family: Verdana, Arial, 宋体;
+    font-size: 25px;
+    background: #666;
+}
+li{
+	list-style: none;
+}
+/*绘制ipod5*/
+#ipod5{
+	background: #fff;
+	height: 480px;
+	width: 220px;
+	margin:0 auto; 
+	margin-top: 10%;
+	border-radius: 30px;
+	position: relative;
+}
+#ipod5 h3{
+	font-size: 20px;
+	color:#444;
+	text-align: center;
+	line-height: 65px;
+}
+.OO{
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	background: #fff;
+	border: 1px solid #444;
+	margin:  0 auto;
+	position: absolute;
+	left: 0;
+    right: 0;
+    bottom: 10px;
+    margin: auto;
+    text-align: center;
+    line-height: 40px;
+    color:#444;
+}
+.OO h2{
+	font-size: 25px;
+}
+/*计算器的总大小*/
+.cal {
+    height: 350px;
+    width: 200px;
+    margin: 0 auto;
+    background: red;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.top{
+	background: #202020;
+	height: 100px;
+    position: relative;
+}
+.top #note{
+	color: #999;
+	font-size:50px;
+	display: block;
+	padding: 5px 0 0 5px;
+}
+/*输入输出结果框*/
+#screen{ 
+	height: 40px;
+	width: 200px;
+	border:0px;
+	background: #202020;
+    direction:ltr; 
+    text-align:right; 
+    font-size:25px; 
+    color:#999; 
+    position: absolute;
+    bottom: 0px;
+    padding-right: 10px; 
+    box-sizing: border-box;
+} 
+/*计算器的按键设置*/
+.cal li{ 
+    list-style:none; 
+    float:left; 
+    width:50px; 
+    height:50px; 
+    display:inline; 
+    line-height:50px; 
+    font-size:18px; 
+    text-align: center;
+    background-color:#eaeaea; 
+    border:1px solid #202020; 
+    box-sizing: border-box;
+} 
+.cal li:nth-child(17){
+	width: 100px;
+}
+.cal li:nth-child(4),.cal li:nth-child(8),
+.cal li:nth-child(12),.cal li:nth-child(16),
+.cal li:nth-child(19){
+	background: #fb890f;
+}
+/*计算器按键的hover，active的效果*/
+.cal li:hover ,.cal li:active{ 
+    background-color:#f9f9f9; 
+    cursor:pointer; 
+} 
+.cal .orange-btn:hover,.cal .orange-btn:active{
+	background-color:#da780f; 
+    cursor:pointer; 
+}
+
